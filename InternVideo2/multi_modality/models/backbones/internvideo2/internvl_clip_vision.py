@@ -11,7 +11,7 @@ from einops import rearrange
 try:
     from .flash_attention_class import FlashAttention
 except:
-    from flash_attention_class import FlashAttention
+    from models.backbones.internvideo2.flash_attention_class import FlashAttention
 from flash_attn.modules.mlp import FusedMLP
 from flash_attn.ops.rms_norm import DropoutAddRMSNorm
 
