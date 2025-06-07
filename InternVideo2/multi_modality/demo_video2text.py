@@ -17,17 +17,11 @@ from demo.utils import (retrieve_text,
                   _frame_from_video,
                   setup_internvideo2)
 
-video = cv2.VideoCapture('demo/example2.mp4')
+video = cv2.VideoCapture('demo/example1.mp4')
 frames = [x for x in _frame_from_video(video)]
 
 
 text_candidates = ["A girl is swinging her arms.",
-                   "A person is doing arm exercises.",
-                   "A person is waving their hands in the air.",
-                   "A person is playing tennis or badminton.",
-                   "A person is driving a car.",
-                   "A team is playing football.",
-                   "A girl is conducting an orchestra.",
                    "A man and a dog are playing in the snow.",
                    "A man is eating a sandwich."]
 

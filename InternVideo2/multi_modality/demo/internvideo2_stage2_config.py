@@ -3,10 +3,10 @@ from configs.model import *
 # ========================= data ==========================
 # NOTE The train_file will not be used during the evaluation
 
-num_workers = 6
+num_workers = 12
 
 # ========================= input ==========================
-num_frames = 20
+num_frames = 30
 num_frames_test = 4
 batch_size = 8
 batch_size_test = 4
@@ -50,7 +50,7 @@ model = dict(
         clip_norm_type='l2',
         clip_return_layer=6,
         clip_student_return_interval=1,
-        pretrained="/home/simon/Documents/InternVideo/InternVideo2/multi_modality/InternVideo2-stage2_1b-224p-f4.pt",
+        pretrained="/home/simon/Documents/InternVideo/InternVideo2/multi_modality/internvideo2-s2_6b-224p-f4.pt",
         use_checkpoint=True,
         checkpoint_num=40,
         use_flash_attn=use_half_precision,
